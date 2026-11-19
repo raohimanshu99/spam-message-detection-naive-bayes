@@ -1,0 +1,213 @@
+{
+  "n_total": 5572,
+  "n_spam": 747,
+  "n_ham": 4825,
+  "n_train": 4457,
+  "n_test": 1115,
+  "vocab_size": 6564,
+  "results": {
+    "Baseline (always ham)": {
+      "accuracy": 0.8663677130044843,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Multinomial Naive Bayes (TF-IDF)": {
+      "accuracy": 0.9811659192825112,
+      "precision": 0.9776119402985075,
+      "recall": 0.8791946308724832,
+      "f1": 0.9257950530035336
+    },
+    "Multinomial Naive Bayes (Bag-of-Words)": {
+      "accuracy": 0.9820627802690582,
+      "precision": 0.9448275862068966,
+      "recall": 0.9194630872483222,
+      "f1": 0.9319727891156463
+    },
+    "Logistic Regression (TF-IDF)": {
+      "accuracy": 0.9659192825112107,
+      "precision": 0.9911504424778761,
+      "recall": 0.7516778523489933,
+      "f1": 0.8549618320610687
+    },
+    "NB (TF-IDF) + number marker": {
+      "accuracy": 0.9865470852017937,
+      "precision": 0.971830985915493,
+      "recall": 0.9261744966442953,
+      "f1": 0.9484536082474226
+    }
+  },
+  "confusion": {
+    "TN": 963,
+    "FP": 3,
+    "FN": 18,
+    "TP": 131
+  },
+  "false_positives": [
+    "Can u get pic msgs to your phone?",
+    "No. She's currently in scotland for that.",
+    "How much would it cost to hire a hitman"
+  ],
+  "false_negatives": [
+    "Dear Voucher Holder 2 claim your 1st class airport lounge passes when using Your holiday voucher call 08704439680. When booking quote 1st class x 2",
+    "Sorry I missed your call let's talk when you have the time. I'm on 07090201529",
+    "Latest News! Police station toilet stolen, cops have nothing to go on!",
+    "Can U get 2 phone NOW? I wanna chat 2 set up meet Call me NOW on 09096102316 U can cum here 2moro Luv JANE xx Calls\u00a31/minmoremobsEMSPOBox45PO139WA",
+    "Hi babe its Jordan, how r u? Im home from abroad and lonely, text me back if u wanna chat xxSP visionsms.com Text stop to stopCost 150p 08712400603",
+    "More people are dogging in your area now. Call 09090204448 and join like minded guys. Why not arrange 1 yourself. There's 1 this evening. A\u00a31.50 minAPN LS278BB",
+    "For sale - arsenal dartboard. Good condition but no doubles or trebles!",
+    "You have 1 new message. Please call 08715205273",
+    "Email AlertFrom: Jeri StewartSize: 2KBSubject: Low-cost prescripiton drvgsTo listen to email call 123",
+    "Marvel Mobile Play the official Ultimate Spider-man game (\u00a34.50) on ur mobile right now. Text SPIDER to 83338 for the game & we ll send u a FREE 8Ball wallpaper",
+    "1000's of girls many local 2 u who r virgins 2 this & r ready 2 4fil ur every sexual need. Can u 4fil theirs? text CUTE to 69911(\u00a31.50p. m)",
+    "XCLUSIVE@CLUBSAISAI 2MOROW 28/5 SOIREE SPECIALE ZOUK WITH NICHOLS FROM PARIS.FREE ROSES 2 ALL LADIES !!! info: 07946746291/07880867867 ",
+    "ROMCAPspam Everyone around should be responding well to your presence since you are so warm and outgoing. You are bringing in a real breath of sunshine.",
+    "Do you realize that in about 40 years, we'll have thousands of old ladies running around with tattoos?",
+    "Hungry gay guys feeling hungry and up 4 it, now. Call 08718730555 just 10p/min. To stop texts call 08712460324 (10p/min)",
+    "RCT' THNQ Adrian for U text. Rgds Vatian",
+    "Hi ya babe x u 4goten bout me?' scammers getting smart..Though this is a regular vodafone no, if you respond you get further prem rate msg/subscription. Other nos used also. Beware!",
+    "Thanks for the Vote. Now sing along with the stars with Karaoke on your mobile. For a FREE link just reply with SING now."
+  ],
+  "top_spam_words": [
+    "claim",
+    "prize",
+    "guaranteed",
+    "tone",
+    "ppm",
+    "cs",
+    "pobox",
+    "landline",
+    "awarded",
+    "ringtone"
+  ],
+  "top_ham_words": [
+    "gt",
+    "lt",
+    "later",
+    "lor",
+    "doing",
+    "ask",
+    "lol",
+    "sure",
+    "really",
+    "home"
+  ],
+  "alpha_sensitivity": {
+    "0.01": {
+      "accuracy": 0.9775784753363229,
+      "precision": 0.9492753623188406,
+      "recall": 0.8791946308724832,
+      "f1": 0.9128919860627178
+    },
+    "0.05": {
+      "accuracy": 0.9811659192825112,
+      "precision": 0.9776119402985075,
+      "recall": 0.8791946308724832,
+      "f1": 0.9257950530035336
+    },
+    "0.1": {
+      "accuracy": 0.9811659192825112,
+      "precision": 0.9776119402985075,
+      "recall": 0.8791946308724832,
+      "f1": 0.9257950530035336
+    },
+    "0.5": {
+      "accuracy": 0.9739910313901345,
+      "precision": 0.9838709677419355,
+      "recall": 0.8187919463087249,
+      "f1": 0.8937728937728938
+    },
+    "1.0": {
+      "accuracy": 0.967713004484305,
+      "precision": 1.0,
+      "recall": 0.7583892617449665,
+      "f1": 0.8625954198473282
+    }
+  },
+  "cv_5fold": {
+    "NB (TF-IDF)": {
+      "accuracy": [
+        0.9836669860157313,
+        0.004628924687814415
+      ],
+      "precision": [
+        0.9672657226752979,
+        0.012002492537932917
+      ],
+      "recall": [
+        0.9088948545861297,
+        0.030340274031030196
+      ],
+      "f1": [
+        0.9369292619069542,
+        0.018760850707151097
+      ]
+    },
+    "NB (Bag-of-Words)": {
+      "accuracy": [
+        0.9831291914564732,
+        0.00430304223329939
+      ],
+      "precision": [
+        0.9383499467614917,
+        0.015695917594368614
+      ],
+      "recall": [
+        0.9357046979865771,
+        0.022772000980312575
+      ],
+      "f1": [
+        0.9369011056796792,
+        0.016380287464433346
+      ]
+    },
+    "Logistic Regression (TF-IDF)": {
+      "accuracy": [
+        0.9626696508360773,
+        0.0033475353613295136
+      ],
+      "precision": [
+        0.9837139136414847,
+        0.010635433624772369
+      ],
+      "recall": [
+        0.7335749440715885,
+        0.01899402585636896
+      ],
+      "f1": [
+        0.8403538362650573,
+        0.01562810237887206
+      ]
+    },
+    "NB (TF-IDF) + number marker": {
+      "accuracy": [
+        0.986000756776775,
+        0.002930284236514263
+      ],
+      "precision": [
+        0.9693104109244975,
+        0.009785253102898002
+      ],
+      "recall": [
+        0.9249843400447428,
+        0.0227415211414838
+      ],
+      "f1": [
+        0.9464320975655784,
+        0.011882928103264866
+      ]
+    }
+  },
+  "confusion_extension": {
+    "TN": 962,
+    "FP": 4,
+    "FN": 11,
+    "TP": 138
+  },
+  "digit_analysis": {
+    "fn_with_digits": 10,
+    "n_fn": 18,
+    "spam_with_digits": 585,
+    "ham_with_digits": 3
+  }
+}
